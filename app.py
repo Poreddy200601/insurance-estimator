@@ -1,5 +1,5 @@
 import streamlit as st
-from utils.model_utils import predict_cost
+from model_utils import predict_cost
 
 st.set_page_config(page_title="Insurance Cost Estimator", page_icon="💰")
 
@@ -26,3 +26,4 @@ if st.button("Estimate Cost"):
     }
     cost = predict_cost(input_data)
     st.success(f"💡 Estimated Insurance Cost: ₹{cost}")
+
